@@ -3,6 +3,6 @@
   <PropertyGroup>
     <CredentialProviderVersion>1.2.3</CredentialProviderVersion>
     <VersionSuffix></VersionSuffix>
-    <TargetFrameworks>netcoreapp3.1;net461;net6.0</TargetFrameworks>
+    <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 </Project>
