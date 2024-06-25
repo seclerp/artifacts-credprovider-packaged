@@ -1,7 +1,16 @@
 <Project>
 
   <PropertyGroup>
+    <CredentialProviderVersion>1.2.0</CredentialProviderVersion>
+    <Authors>Microsoft,seclerp</Authors>
+    <RepositoryUrl>https://github.com/seclerp/artifacts-credprovider-packaged</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Copyright>(C) 2024 Microsoft</Copyright>
+  </PropertyGroup>
+  
+  <PropertyGroup>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <UseArtifactsOutput>true</UseArtifactsOutput>
 
     <!-- Required for reference trimmer -->
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
