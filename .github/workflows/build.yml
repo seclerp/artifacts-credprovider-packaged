@@ -23,7 +23,7 @@ jobs:
       - name: 📝 Test ChromeProtocol.Tools
         run: dotnet test --no-build --verbosity normal CredentialProvider.Microsoft.Tests
       - name: 📦 Pack
-        run: dotnet pack --no-build --output ./nupkg
+        run: dotnet pack --no-build --configuration debug --output ./nupkg
       - name: 📦 Upload Artifact
         uses: actions/upload-artifact@v3
         with:
