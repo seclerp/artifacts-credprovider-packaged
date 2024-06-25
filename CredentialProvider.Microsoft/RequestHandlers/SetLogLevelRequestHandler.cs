@@ -8,7 +8,7 @@ using NuGetCredentialProvider.Logging;
 
 namespace NuGetCredentialProvider.RequestHandlers
 {
-    internal class SetLogLevelRequestHandler : RequestHandlerBase<SetLogLevelRequest, SetLogLevelResponse>
+    public class SetLogLevelRequestHandler : RequestHandlerBase<SetLogLevelRequest, SetLogLevelResponse>
     {
         private static readonly SetLogLevelResponse SuccessResponse = new SetLogLevelResponse(MessageResponseCode.Success);
 

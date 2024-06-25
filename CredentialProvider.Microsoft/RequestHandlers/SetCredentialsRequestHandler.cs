@@ -11,7 +11,7 @@ namespace NuGetCredentialProvider.RequestHandlers
     /// <summary>
     /// Handles a <see cref="SetCredentialsRequest"/>
     /// </summary>
-    internal class SetCredentialsRequestHandler : RequestHandlerBase<SetCredentialsRequest, SetCredentialsResponse>
+    public class SetCredentialsRequestHandler : RequestHandlerBase<SetCredentialsRequest, SetCredentialsResponse>
     {
         private static readonly SetCredentialsResponse SuccessResponse = new SetCredentialsResponse(MessageResponseCode.Success);
 

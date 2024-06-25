@@ -14,7 +14,7 @@ namespace NuGetCredentialProvider.RequestHandlers
     /// <summary>
     /// Handles a <see cref="GetOperationClaimsRequest"/> and replies with the supported operations.
     /// </summary>
-    internal class GetOperationClaimsRequestHandler : RequestHandlerBase<GetOperationClaimsRequest, GetOperationClaimsResponse>
+    public class GetOperationClaimsRequestHandler : RequestHandlerBase<GetOperationClaimsRequest, GetOperationClaimsResponse>
     {
         /// <summary>
         /// A <see cref="GetOperationClaimsResponse"/> when a registered credential provider can provide credentials for the current request.

@@ -12,7 +12,7 @@ namespace NuGetCredentialProvider.Util
     /// <summary>
     /// Represents the set of extension methods used by this project.
     /// </summary>
-    internal static class ExtensionMethods
+    public static class ExtensionMethods
     {
         /// <summary>
         /// Writes a <see cref="LogLevel.Error"/> event message to the <see cref="ILogger"/> using the specified message.

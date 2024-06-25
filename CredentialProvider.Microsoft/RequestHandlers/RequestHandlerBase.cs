@@ -19,7 +19,7 @@ namespace NuGetCredentialProvider.RequestHandlers
     /// </summary>
     /// <typeparam name="TRequest">The type of the request message.</typeparam>
     /// <typeparam name="TResponse">The type of the response message.</typeparam>
-    internal abstract class RequestHandlerBase<TRequest, TResponse> : IRequestHandler
+    public abstract class RequestHandlerBase<TRequest, TResponse> : IRequestHandler
         where TResponse : class
     {
         /// <summary>
