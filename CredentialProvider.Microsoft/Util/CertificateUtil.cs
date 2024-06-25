@@ -4,7 +4,7 @@ using ILogger = NuGetCredentialProvider.Logging.ILogger;
 
 namespace NuGetCredentialProvider.Util;
 
-internal static class CertificateUtil
+public static class CertificateUtil
 {
     public static X509Certificate2 GetCertificateBySubjectName(ILogger logger, string subjectName)
     {

@@ -12,7 +12,7 @@ using NuGetCredentialProvider.Util;
 
 namespace NuGetCredentialProvider.CredentialProviders.VstsBuildTaskServiceEndpoint;
 
-internal class VstsBuildTaskMsalTokenProvidersFactory : ITokenProvidersFactory
+public class VstsBuildTaskMsalTokenProvidersFactory : ITokenProvidersFactory
 {
     private readonly ILogger logger;
 

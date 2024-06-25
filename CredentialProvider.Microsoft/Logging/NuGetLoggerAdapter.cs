@@ -7,7 +7,7 @@ using NuGet.Common;
 
 namespace NuGetCredentialProvider.Logging;
 
-internal class NuGetLoggerAdapter : Microsoft.Extensions.Logging.ILogger
+public class NuGetLoggerAdapter : Microsoft.Extensions.Logging.ILogger
 {
     private readonly ILogger logger;
     private readonly LogLevel logLevel;
