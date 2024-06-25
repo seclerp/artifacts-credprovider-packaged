@@ -11,7 +11,7 @@ namespace NuGetCredentialProvider.RequestHandlers
     /// <summary>
     /// Handles an <see cref="InitializeRequest"/>.
     /// </summary>
-    internal class InitializeRequestHandler : RequestHandlerBase<InitializeRequest, InitializeResponse>
+    public class InitializeRequestHandler : RequestHandlerBase<InitializeRequest, InitializeResponse>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="InitializeRequestHandler"/> class.

@@ -9,11 +9,11 @@ using NuGet.Protocol.Plugins;
 
 namespace NuGetCredentialProvider.Logging
 {
-    internal class PluginConnectionLogger : LoggerBase
+    public class PluginConnectionLogger : LoggerBase
     {
         private readonly IConnection connection;
 
-        internal PluginConnectionLogger(IConnection connection)
+        public PluginConnectionLogger(IConnection connection)
             : base(writesToConsole: true)
         {
             this.connection = connection;

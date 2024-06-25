@@ -12,7 +12,7 @@ namespace NuGetCredentialProvider.CredentialProviders
     /// <summary>
     /// Represents an interface for implementation of credential providers.
     /// </summary>
-    internal interface ICredentialProvider : IDisposable
+    public interface ICredentialProvider : IDisposable
     {
         /// <summary>
         /// Determines whether this implementation can provide credentials for the specified <see cref="Uri"/>.

@@ -10,13 +10,13 @@ using NuGet.Common;
 
 namespace NuGetCredentialProvider.Logging
 {
-    internal class LogEveryMessageFileLogger : ILogger
+    public class LogEveryMessageFileLogger : ILogger
     {
         private static readonly int Pid = Process.GetCurrentProcess().Id;
 
         private readonly string filePath;
 
-        internal LogEveryMessageFileLogger(string filePath)
+        public LogEveryMessageFileLogger(string filePath)
         {
             this.filePath = filePath;
             Log(LogLevel.Minimal, allowOnConsole: false, string.Format(Resources.LogStartsAt, DateTime.UtcNow.ToString("u")));

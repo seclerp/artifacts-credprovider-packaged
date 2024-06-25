@@ -7,7 +7,7 @@ using NuGet.Common;
 
 namespace NuGetCredentialProvider.Logging
 {
-    internal class MultiLogger : List<ILogger>, ILogger
+    public class MultiLogger : List<ILogger>, ILogger
     {
         private LogLevel? minLogLevel = null;
 

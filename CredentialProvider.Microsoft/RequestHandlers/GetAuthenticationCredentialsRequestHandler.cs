@@ -16,7 +16,7 @@ namespace NuGetCredentialProvider.RequestHandlers
     /// <summary>
     /// Handles a <see cref="GetAuthenticationCredentialsRequest"/> and replies with credentials.
     /// </summary>
-    internal class GetAuthenticationCredentialsRequestHandler : RequestHandlerBase<GetAuthenticationCredentialsRequest, GetAuthenticationCredentialsResponse>
+    public class GetAuthenticationCredentialsRequestHandler : RequestHandlerBase<GetAuthenticationCredentialsRequest, GetAuthenticationCredentialsResponse>
     {
         private readonly ICache<Uri, string> cache;
         private readonly IReadOnlyCollection<ICredentialProvider> credentialProviders;

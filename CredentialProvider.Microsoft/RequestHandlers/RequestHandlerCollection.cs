@@ -13,7 +13,7 @@ namespace NuGetCredentialProvider.RequestHandlers
     /// </summary>
     /// <remarks>This custom collection is used instead of <see cref="RequestHandlers"/> because it inherits
     /// <see cref="ConcurrentDictionary{TKey,TValue}"/> which allows for the initializer syntax.</remarks>
-    internal class RequestHandlerCollection : ConcurrentDictionary<MessageMethod, IRequestHandler>, IRequestHandlers
+    public class RequestHandlerCollection : ConcurrentDictionary<MessageMethod, IRequestHandler>, IRequestHandlers
     {
         public void Add(MessageMethod method, IRequestHandler handler)
         {
