@@ -80,7 +80,7 @@ namespace NuGetCredentialProvider.RequestHandlers
             catch (Exception ex)
             {
                 // don't report cancellations to the console during shutdown, they're most likely not interesting.
-                bool cancelingDuringShutdown = ex is OperationCanceledException && Program.IsShuttingDown;
+                bool cancelingDuringShutdown = ex is OperationCanceledException;
 
                 if (cancelingDuringShutdown)
                 {
