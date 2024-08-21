@@ -22,6 +22,8 @@ jobs:
         run: dotnet test --no-build --verbosity normal src/Authentication.Tests
       - name: 📝 Test ChromeProtocol.Tools
         run: dotnet test --no-build --verbosity normal CredentialProvider.Microsoft.Tests
+      - name: 📦 Publish
+        run: dotnet publish --no-build --configuration debug
       - name: 📦 Pack
         run: dotnet pack --no-build --configuration debug --output ./nupkg
       - name: 📦 Upload Artifact
