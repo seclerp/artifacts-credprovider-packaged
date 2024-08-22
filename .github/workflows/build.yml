@@ -27,7 +27,6 @@ jobs:
       - name: 📦 Pack
         run: dotnet pack --no-build --configuration debug --output ./nupkg
       - name: 📦 Upload Artifact
-        uses: actions/upload-artifact@v3
+        uses: kittaakos/upload-artifact-as-is@v0
         with:
-          name: nuget-packages
-          path: ./nupkg
+          path: ./nupkg/
