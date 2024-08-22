@@ -1,6 +1,13 @@
 <Project>
 
   <PropertyGroup>
+    <Authors>Microsoft,seclerp</Authors>
+    <RepositoryUrl>https://github.com/seclerp/artifacts-credprovider-packaged</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Copyright>(C) 2024 Microsoft</Copyright>
+  </PropertyGroup>
+
+  <PropertyGroup>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
 
     <!-- Required for reference trimmer -->
