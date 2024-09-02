@@ -3,6 +3,7 @@
   <PropertyGroup>
     <AssemblyName>Microsoft.Artifacts.Authentication</AssemblyName>
     <RootNamespace>Microsoft.Artifacts.Authentication</RootNamespace>
+    <PackageId>JetBrains.Microsoft.Artifacts.Authentication</PackageId>
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>latest</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -14,7 +15,6 @@
     <Copyright>© Microsoft Corporation. All rights reserved.</Copyright>
     <PackageIcon>artifacts-icon.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <RepositoryUrl>https://github.com/microsoft/artifacts-credprovider</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
